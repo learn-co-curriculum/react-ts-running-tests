@@ -15,26 +15,23 @@ Fork and clone this lesson using the "Fork" button above so you can code along!
 ## Running Jest Tests
 
 There are a number of JavaScript test frameworks out there. For testing vanilla
-JavaScript applications, one popular choice is Mocha, which we use for the tests
-in our JavaScript labs.
+JavaScript applications, one popular choice is Mocha. [Jest][jest] is another 
+popular choice for JavaScript developers, and in particular the React community. 
+Jest, like React, was developed by Facebook and is an open source project.
+You can read the [Jest docs][jest-docs] if you're curious to learn more.
 
-[Jest][jest] is another popular choice for JavaScript developers, and in
-particular the React community. Jest, like React, was developed by Facebook and
-is an open source project. You can read the [Jest docs][jest-docs] if you're
-curious to learn more.
+> **Note**: Recall that TypeScript is a superset of JavaScript that eventually 
+> gets compiled into JavaScript. Meaning, these test frameworks will still work 
+> when testing the compiled JavaScript code, despite being originally written in
+> TypeScript. 
 
 Jest comes preinstalled when you generate a React project using
 `create-react-app`, so all you have to do to run tests in React labs is run
 `npm test`, which will execute the test script found in the `package.json` file.
 
-> If you have the `learn` gem installed as part of your setup for this course,
-> you can also run `learn test`, which will run the test files _as well as_ sync
-> your progress with Canvas.
+Running `npm test` should produce output like this in your terminal:
 
-Running `learn test` or `npm test` should produce output like this in your
-terminal:
-
-![jest demo](https://jestjs.io/img/blog/15-watch.gif)
+![test demo](https://imgur.com/nDa7zxI.gif)
 
 This command will run all tests in the `src` directory by looking for files that
 have `.test.js` in the file name (you'll typically find them in the `__tests__`
@@ -52,7 +49,7 @@ again. That means you can keep the tests running as you work!
 > tests in our lessons are looking for.
 
 In our React lessons, the tests use [Jest][jest] and [React Testing
-Library][react testing library] to test your React code. Tests will be written
+Library][react testing library] to test your code. Tests will be written
 in the folder `src/__tests__`, and typically there will be one test file for
 each component. A typical test file looks something like this:
 
@@ -75,7 +72,7 @@ test("displays the text 'please pass this test'", () => {
 
 You can ignore most of the setup code at the top: this is just giving us access
 to code that is needed to test your React components, and to access the code in
-your component file itself. Let's focus on the test itself:
+your component file. Let's focus on the test:
 
 ```jsx
 test("displays the text 'please pass this test'", () => {
@@ -117,8 +114,7 @@ So, all together, the test is:
 
 There are a couple of tests defined for this lab so you can get some practice.
 
-To get started, run `npm install` (if you haven't already), then run `npm test`
-or `learn test`.
+To get started, run `npm install` (if you haven't already), then run `npm test`.
 
 > **Pro tip**: you can use the shorthand `npm i` and `npm t` to run the install
 > and test scripts as well!
@@ -207,6 +203,10 @@ function Header(props) {
 export default Header;
 ```
 
+> **Note**: We will learn how to write React with TypeScript moving forward.
+> We're using JavaScript here for the purposes of this lab where our focus 
+> is solely on the tests. 
+
 Next, press the **a** key in your terminal to tell Jest to run **all** tests.
 Try getting the tests for the `Article` component to pass too.
 
@@ -282,7 +282,7 @@ actually works in the browser, so make sure to check that as well when you're
 writing your code!
 
 If you're stuck wondering what a particular test is asking for, check out the
-resources links below (particularly for React Testing Library) to help get a
+resources below (particularly for React Testing Library) to help get a
 better sense of how the test is written.
 
 ## Resources
