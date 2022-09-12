@@ -72,7 +72,7 @@ test("displays the text 'please pass this test'", () => {
 
 You can ignore most of the setup code at the top: this is just giving us access
 to code that is needed to test your React components, and to access the code in
-your component file itself. Let's focus on the test itself:
+your component file. Let's focus on the test:
 
 ```jsx
 test("displays the text 'please pass this test'", () => {
@@ -282,7 +282,7 @@ actually works in the browser, so make sure to check that as well when you're
 writing your code!
 
 If you're stuck wondering what a particular test is asking for, check out the
-resources links below (particularly for React Testing Library) to help get a
+resources below (particularly for React Testing Library) to help get a
 better sense of how the test is written.
 
 ## Resources
