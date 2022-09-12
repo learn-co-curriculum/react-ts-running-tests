@@ -31,7 +31,7 @@ Jest comes preinstalled when you generate a React project using
 
 Running `npm test` should produce output like this in your terminal:
 
-![jest demo](https://jestjs.io/img/blog/15-watch.gif)
+![test demo](https://imgur.com/nDa7zxI.gif)
 
 This command will run all tests in the `src` directory by looking for files that
 have `.test.js` in the file name (you'll typically find them in the `__tests__`
